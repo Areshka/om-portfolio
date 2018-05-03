@@ -1,0 +1,9 @@
+node_modules/
+src/bower_components/
+.DS_Store
+Thumbs.db
+.idea
+*.log
+*.psd
+*.ai
+*.pdf
