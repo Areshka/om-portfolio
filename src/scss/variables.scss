@@ -1,4 +1,26 @@
 $font-folder: "../fonts/"; // путь к шрифтам
 $img-folder: "../img/"; // путь к картинкам
 
-$text-color: #DDDDDD; // цвет шрифта
+$text-color: #dddddd; // цвет шрифта
+$gray: #aaaaaa;
+$darkGray: #4f4f4f;
+$blue: #7498bc;
+$darkBlue: darken($blue, 20%);
+$lightBlue: lighten($blue, 5%);
+
+// navbar
+$navbar-padding-y: 12px;
+$navbar-padding-x: 30px;
+
+$navbar-brand-padding-y: 0;
+
+// Главное меню
+$navbar-light-color: $text-color;
+$navbar-light-hover-color: $blue;
+$navbar-light-active-color: $lightBlue;
+$navbar-light-disabled-color: $darkGray;
+
+$border-width: 2px;
+$navbar-toggler-border-radius: 0;
+$navbar-toggler-border-color: $gray;
+$main-navigation__toggler: $gray;
