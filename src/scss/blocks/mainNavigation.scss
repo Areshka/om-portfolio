@@ -2,7 +2,6 @@
   padding: $navbar-padding-y $navbar-padding-x;
   background-color: rgba(29,29,31,.9);
 }
-
 @keyframes rotate {
   100% {
     transform: rotateY(360deg);
@@ -46,5 +45,156 @@
       letter-spacing: 5px;
     }
   }
+}
 
+.navbar-nav {
+  padding-top: 10px;
+
+  .nav-item {
+    border-bottom: 1px solid $darkGray;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .nav-link {
+    font-family: "RalewayBold", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $navbar-color;
+    transition: all 0.3s ease;
+
+    @include hover-focus {
+      color: $navbar-hover-color;
+    }
+
+    &.disabled {
+      color: $navbar-disabled-color;
+      cursor: default;
+    }
+  }
+
+  .active > .nav-link,
+  .nav-link.active,
+  .nav-link.show,
+  .show > .nav-link {
+    color: $navbar-active-color;
+  }
+}
+
+.navbar-toggler {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: $border-width solid transparent; // remove default button style
+  outline: none;
+  @include border-radius($navbar-toggler-border-radius);
+  @include hover-focus {
+    text-decoration: none;
+  }
+  // Opinionated: add "hand" cursor to non-disabled .navbar-toggler elements
+  &:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+}
+
+.navbar-toggler-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+
+    &#{$infix} {
+      @include media-breakpoint-down($breakpoint) {
+        > .container-fluid,
+        > .container {
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+      @include media-breakpoint-up($next) {
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+
+        .navbar-nav {
+          flex-direction: row;
+
+          .dropdown-menu {
+            position: absolute;
+          }
+
+          .nav-link {
+            padding-right: $navbar-nav-link-padding-x;
+            padding-left: $navbar-nav-link-padding-x;
+          }
+        }
+        // For nesting containers, have to redeclare for alignment purposes
+        > .container-fluid,
+        > .container {
+          flex-wrap: nowrap;
+        }
+
+        .navbar-collapse {
+          display: flex !important;
+          // stylelint-disable-line declaration-no-important
+          // Changes flex-bases to auto because of an IE10 bug
+          flex-basis: auto;
+        }
+
+        .navbar-toggler {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.navbar-dark {
+
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-color;
+      @include hover-focus {
+        color: $navbar-hover-color;
+      }
+
+      &.disabled {
+        color: $navbar-disabled-color;
+      }
+    }
+
+    .active > .nav-link,
+    .nav-link.active,
+    .nav-link.show,
+    .show > .nav-link {
+      color: $navbar-active-color;
+    }
+  }
+
+  .navbar-toggler {
+    border-color: $navbar-toggler-border-color;
+  }
+
+  .navbar-toggler-icon {
+    background-image: $navbar-dark-toggler-icon-bg;
+  }
+
+  .navbar-text {
+    color: $navbar-dark-color;
+
+    a {
+      color: $navbar-active-color;
+      @include hover-focus {
+        color: $navbar-active-color;
+      }
+    }
+  }
 }
