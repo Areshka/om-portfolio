@@ -1,0 +1,13 @@
+@mixin fontFace($family, $src, $weight: normal, $style: normal) {
+	@font-face {
+		font-family: $family;
+		src: url('#{$font-folder+$src}.eot'); // IE9 compat
+		src: url('#{$font-folder+$src}.eot?#iefix') format('embedded-opentype'), // IE8 and below
+			url('#{$font-folder+$src}.woff') format('woff'), // standards
+			url('#{$font-folder+$src}.woff2') format('woff2'), // standards
+			url('#{$font-folder+$src}.ttf') format('truetype'); // Safari, Android, iOS
+
+		font-style: $style;
+		font-weight: $weight;
+	}
+}

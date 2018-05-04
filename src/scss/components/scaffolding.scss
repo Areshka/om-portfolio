@@ -1,4 +1,26 @@
 body {
+  margin: 0;
+  font-family: "LibreBaskervilleItalic", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
   background: url('../../img/cover.jpg') no-repeat;
   background-attachment: fixed;
+  background-size: cover;
+
+
+  &::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right,rgba(28,29,33,.8) 0%,rgba(102,102,102,.5) 50%,rgba(28,29,33,.8) 100%);
+  }
+}
+
+a {
+  color: #fff;
 }
