@@ -1876,7 +1876,7 @@ a {
   left: 0;
   width: 100%;
   z-index: 999;
-  padding: 12px 30px;
+  padding: 6px 15px;
   background-color: rgba(29, 29, 31, 0.9); }
 
 @-webkit-keyframes rotate {
