@@ -2110,6 +2110,48 @@ a {
     font-style: italic;
     font-size: 30px;
     line-height: 40px; }
+
+@-webkit-keyframes move {
+  0% {
+    margin-top: 10px; }
+  100% {
+    margin-top: 60%; } }
+
+@keyframes move {
+  0% {
+    margin-top: 10px; }
+  100% {
+    margin-top: 60%; } }
+
+.down {
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  margin-left: -25px;
+  text-align: center;
+  border: 2px solid #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+  .down img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 17px;
+    height: 10px;
+    margin-left: -9px;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-name: move;
+            animation-name: move;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear; }
   @media (min-width: 576px) {
     .container {
       max-width: 540px; }
