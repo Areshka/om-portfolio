@@ -49,6 +49,7 @@
 
 .navbar-nav {
   padding-top: 10px;
+  background-color: red;
 
   .nav-item {
     border-bottom: 1px solid $darkGray;
@@ -87,14 +88,18 @@
 }
 
 .navbar-toggler {
+  position: relative;
   width: 32px;
   height: 32px;
   padding: 0;
-  border: $border-width solid transparent; // remove default button style
+  border: $border-width solid $navbar-toggler-color; // remove default button style
   outline: none;
+  transition: border-color .5s ease;
   @include border-radius($navbar-toggler-border-radius);
   @include hover-focus {
     text-decoration: none;
+    outline: none;
+    border-color: $navbar-toggler-hover-color;
   }
   // Opinionated: add "hand" cursor to non-disabled .navbar-toggler elements
   &:not(:disabled):not(.disabled) {
@@ -102,9 +107,56 @@
   }
 }
 
-.navbar-toggler-icon {
-  width: 24px;
-  height: 24px;
+.mainNavigation--closed .navbar-toggler::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  width: 18px;
+  height: 2px;
+  background-color: $navbar-toggler-color;
+  box-shadow: 0 6px 0 0 $navbar-toggler-color, 0 12px 0 0 $navbar-toggler-color;
+  transition: all .5s ease;
+}
+
+.mainNavigation--closed .navbar-toggler:hover::before {
+  background-color: $navbar-toggler-hover-color;
+  box-shadow: 0 6px 0 0 $navbar-toggler-hover-color, 0 12px 0 0 $navbar-toggler-hover-color;
+}
+
+.mainNavigation--closed .navbar-toggler:active::before {
+  background-color: $navbar-toggler-active-color;
+  box-shadow: 0 6px 0 0 $navbar-toggler-active-color, 0 12px 0 0 $navbar-toggler-active-color;
+}
+
+.mainNavigation--opened .navbar-toggler::before,
+.mainNavigation--opened .navbar-toggler::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 5px;
+  width: 18px;
+  height: 2px;
+  background-color: $navbar-toggler-color;
+  transition: all .5s ease;
+}
+
+.mainNavigation--opened .navbar-toggler::before {
+  transform: rotate(45deg);
+}
+
+.mainNavigation--opened .navbar-toggler::after {
+  transform: rotate(-45deg);
+}
+
+.mainNavigation--opened .navbar-toggler:hover::before,
+.mainNavigation--opened .navbar-toggler:hover::after {
+  background-color: $navbar-toggler-hover-color;
+}
+
+.mainNavigation--opened .navbar-toggler:active::before,
+.mainNavigation--opened .navbar-toggler:active::after {
+  background-color: $navbar-toggler-active-color;
 }
 
 .navbar-expand {
@@ -157,44 +209,56 @@
   }
 }
 
-.navbar-dark {
-
-  .navbar-nav {
-    .nav-link {
-      color: $navbar-color;
-      @include hover-focus {
-        color: $navbar-hover-color;
-      }
-
-      &.disabled {
-        color: $navbar-disabled-color;
-      }
-    }
-
-    .active > .nav-link,
-    .nav-link.active,
-    .nav-link.show,
-    .show > .nav-link {
-      color: $navbar-active-color;
-    }
-  }
-
-  .navbar-toggler {
-    border-color: $navbar-toggler-border-color;
-  }
-
-  .navbar-toggler-icon {
-    background-image: $navbar-dark-toggler-icon-bg;
-  }
-
-  .navbar-text {
-    color: $navbar-dark-color;
-
-    a {
-      color: $navbar-active-color;
-      @include hover-focus {
-        color: $navbar-active-color;
-      }
-    }
-  }
-}
+// .navbar-dark {
+//
+//   .navbar-nav {
+//     .nav-link {
+//       color: $navbar-color;
+//       @include hover-focus {
+//         color: $navbar-hover-color;
+//       }
+//
+//       &.disabled {
+//         color: $navbar-disabled-color;
+//       }
+//     }
+//
+//     .active > .nav-link,
+//     .nav-link.active,
+//     .nav-link.show,
+//     .show > .nav-link {
+//       color: $navbar-active-color;
+//     }
+//   }
+//
+//   .navbar-toggler {
+//     border-color: $navbar-toggler-border-color;
+//
+//     @include hover-focus {
+//       text-decoration: none;
+//       border-color: #8d8d8d;
+//     }
+//   }
+//
+//
+//
+//   .navbar-toggle:hover {
+//     background-color: red;
+//   }
+//
+//   .navbar-toggler-icon {
+//     background-image: $navbar-dark-toggler-icon-bg;
+//     display: none;
+//   }
+//
+//   .navbar-text {
+//     color: $navbar-dark-color;
+//
+//     a {
+//       color: $navbar-active-color;
+//       @include hover-focus {
+//         color: $navbar-active-color;
+//       }
+//     }
+//   }
+// }

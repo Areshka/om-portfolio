@@ -13394,3 +13394,23 @@ var Collapse = function ($) {
   return Collapse;
 }($);
 //# sourceMappingURL=collapse.js.map
+
+
+/* ------------------------------------------------------------------
+  main-nav open-close
+---------------------------------------------------------------------*/
+var navMain = document.querySelector('.mainNavigation');
+var navToggle = navMain.querySelector('.navbar-toggler');
+navToggle.addEventListener('click', function() {
+  if (navMain.classList.contains("mainNavigation--closed")) {
+    navMain.classList.remove("mainNavigation--closed");
+    navMain.classList.add("mainNavigation--opened");
+  } else {
+    navMain.classList.add("mainNavigation--closed");
+    navMain.classList.remove("mainNavigation--opened");
+  }
+});
+
+/* ------------------------------------------------------------------
+  end main-nav open-close
+---------------------------------------------------------------------*/
