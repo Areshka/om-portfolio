@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap Reboot v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -2098,18 +2099,37 @@ a {
     text-align: center;
     color: #fff; }
   .mainHeader__header {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: "RalewayBold", sans-serif;
     font-weight: 700;
-    font-size: 38px;
+    font-size: 30px;
     line-height: 40px; }
   .mainHeader__text {
-    margin: 0;
     font-family: "LibreBaskervilleItalic", serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 30px;
-    line-height: 40px; }
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0 auto;
+    /* Эффект скроллинга во время печати */
+    white-space: nowrap;
+    /* Печать одной прямой строки */
+    overflow: hidden;
+    /* Скрывает содержимое до анимации */
+    -webkit-animation: typing 3.5s steps(40, end);
+            animation: typing 3.5s steps(40, end); }
+
+/* The typing effect */
+@-webkit-keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
 
 @-webkit-keyframes move {
   0% {
@@ -2126,7 +2146,7 @@ a {
 .down {
   position: absolute;
   left: 50%;
-  bottom: 100px;
+  bottom: 60px;
   z-index: 10;
   width: 50px;
   height: 50px;
