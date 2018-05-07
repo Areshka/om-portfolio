@@ -65,9 +65,9 @@ gulp.task("copy", function() { // копирует необходимые фай
 
 gulp.task("html", function() { // сбор html
   gulp.src(path.src.html) //  выбор всех html файлов по указанному пути
-      .pipe(plumber()) // отслеживание ошибок
-      .pipe(gulp.dest(path.build.html)) // выкладывание готовых файлов
-      .pipe(webserver.reload({stream: true})); // команда перезагрузки сервера
+    .pipe(plumber()) // отслеживание ошибок
+    .pipe(gulp.dest(path.build.html)) // выкладывание готовых файлов
+    .pipe(webserver.reload({stream: true})); // команда перезагрузки сервера
 });
 
 gulp.task("css", function() { // сбор стилей
@@ -94,13 +94,13 @@ gulp.task("css", function() { // сбор стилей
 
 gulp.task('js', function() {
   gulp.src(path.src.js) // получаем main.js
-      .pipe(plumber()) // для отслеживания ошибок
-      .pipe(rigger()) // импортируем все указынные файлы в main.js
-      .pipe(gulp.dest(path.build.js)) // выгружаем в папку build/js
-      .pipe(uglify()) // минифицируем js
-      .pipe(rename({suffix: '.min'})) //добавляем суффикс .min
-      .pipe(gulp.dest(path.build.js)) // выгружаем в папку build/js
-      .pipe(webserver.reload({stream: true})); // команда перезагрузки сервера
+    .pipe(plumber()) // для отслеживания ошибок
+    .pipe(rigger()) // импортируем все указынные файлы в main.js
+    .pipe(gulp.dest(path.build.js)) // выгружаем в папку build/js
+    .pipe(uglify()) // минифицируем js
+    .pipe(rename({suffix: '.min'})) //добавляем суффикс .min
+    .pipe(gulp.dest(path.build.js)) // выгружаем в папку build/js
+    .pipe(webserver.reload({stream: true})); // команда перезагрузки сервера
 });
 
 gulp.task("img", function() { // создание таска images
