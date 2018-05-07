@@ -1870,6 +1870,11 @@ a {
   color: #fff; }
 
 .mainNavigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
   padding: 12px 30px;
   background-color: rgba(29, 29, 31, 0.9); }
 
