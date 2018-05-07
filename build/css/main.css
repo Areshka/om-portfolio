@@ -1928,9 +1928,9 @@ a {
       letter-spacing: 5px; }
 
 .navbar-nav {
-  padding-top: 10px;
-  background-color: red; }
+  margin-top: 20px; }
   .navbar-nav .nav-item {
+    padding: 7px 0;
     border-bottom: 1px solid #4f4f4f; }
     .navbar-nav .nav-item:last-child {
       border-bottom: none; }
