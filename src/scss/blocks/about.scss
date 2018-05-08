@@ -1,0 +1,34 @@
+.aboutItem {
+  margin-bottom: 25px;
+  font-family: "RalewayMedium", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  p {
+    margin: 0 0 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__photo {
+    width: 100%;
+    height: auto;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+
+    &--blue {
+      font-size: 20px;
+      color: $lightBlue;
+    }
+  }
+
+}
