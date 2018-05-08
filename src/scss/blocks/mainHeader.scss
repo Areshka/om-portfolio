@@ -78,3 +78,40 @@
     animation-timing-function: linear;
   }
 }
+
+@include media-breakpoint-up(sm) {
+
+  .mainHeader__header {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .mainHeader__text {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+}
+
+@include media-breakpoint-up(md) {
+
+  .mainHeader__header {
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .mainHeader__text {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+}
+
+@include media-breakpoint-up(lg) {
+
+  .mainHeader__header {
+    font-size: 55px;
+    line-height: 60px;
+  }
+    
+}
