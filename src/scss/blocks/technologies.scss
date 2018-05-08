@@ -1,0 +1,62 @@
+.technologies {
+
+  &__list {
+    @include list-style;
+  }
+
+  &__item {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .icon-technologies {
+      width: 40px;
+      height: 40px;
+      fill: $gray;
+      transition: all 0.4s ease;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    .icon-html5:hover {
+      fill: #F16528;
+    }
+
+    .icon-css3:hover {
+      fill: #119DD8;
+    }
+
+    .icon-js:hover {
+      fill: #F0DB4F;
+    }
+
+    .icon-bootstrap:hover {
+      fill: #563D7C;
+    }
+
+    .icon-sass:hover {
+      fill: #CD669A;
+    }
+
+    .icon-gulp:hover {
+      fill: #D04646;
+    }
+
+    .icon-ps:hover {
+      fill: #00C8FF;
+    }
+
+    .icon-wordpress:hover {
+      fill: #21759B;
+    }
+  }
+
+}
