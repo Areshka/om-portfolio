@@ -165,106 +165,48 @@
   background-color: $navbar-toggler-active-color;
 }
 
-.navbar-expand {
-  @each $breakpoint in map-keys($grid-breakpoints) {
-    $next: breakpoint-next($breakpoint, $grid-breakpoints);
-    $infix: breakpoint-infix($next, $grid-breakpoints);
+@include media-breakpoint-up(sm) {
 
-    &#{$infix} {
-      @include media-breakpoint-down($breakpoint) {
-        > .container-fluid,
-        > .container {
-          padding-right: 0;
-          padding-left: 0;
-        }
+  .logo {
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__text {
+      font-size: 24px;
+      line-height: 20px;
+
+      &--blue {
+        font-size: 30px;
       }
-      @include media-breakpoint-up($next) {
-        flex-flow: row nowrap;
-        justify-content: flex-start;
 
-        .navbar-nav {
-          flex-direction: row;
+      &--small {
+        font-size: 14px;
+      }
+    }
+  }
 
-          .dropdown-menu {
-            position: absolute;
-          }
+}
 
-          .nav-link {
-            padding-right: $navbar-nav-link-padding-x;
-            padding-left: $navbar-nav-link-padding-x;
-          }
-        }
-        // For nesting containers, have to redeclare for alignment purposes
-        > .container-fluid,
-        > .container {
-          flex-wrap: nowrap;
-        }
+@include media-breakpoint-up(lg) {
 
-        .navbar-collapse {
-          display: flex !important;
-          // stylelint-disable-line declaration-no-important
-          // Changes flex-bases to auto because of an IE10 bug
-          flex-basis: auto;
-        }
+  .mainNavigation {
+    padding: $navbar-padding-y $navbar-padding-x;
 
-        .navbar-toggler {
-          display: none;
+    .navbar-nav {
+      margin-top: 0;
+
+      .nav-item {
+        border-bottom: none;
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
         }
       }
     }
   }
-}
 
-// .navbar-dark {
-//
-//   .navbar-nav {
-//     .nav-link {
-//       color: $navbar-color;
-//       @include hover-focus {
-//         color: $navbar-hover-color;
-//       }
-//
-//       &.disabled {
-//         color: $navbar-disabled-color;
-//       }
-//     }
-//
-//     .active > .nav-link,
-//     .nav-link.active,
-//     .nav-link.show,
-//     .show > .nav-link {
-//       color: $navbar-active-color;
-//     }
-//   }
-//
-//   .navbar-toggler {
-//     border-color: $navbar-toggler-border-color;
-//
-//     @include hover-focus {
-//       text-decoration: none;
-//       border-color: #8d8d8d;
-//     }
-//   }
-//
-//
-//
-//   .navbar-toggle:hover {
-//     background-color: red;
-//   }
-//
-//   .navbar-toggler-icon {
-//     background-image: $navbar-dark-toggler-icon-bg;
-//     display: none;
-//   }
-//
-//   .navbar-text {
-//     color: $navbar-dark-color;
-//
-//     a {
-//       color: $navbar-active-color;
-//       @include hover-focus {
-//         color: $navbar-active-color;
-//       }
-//     }
-//   }
-// }
+}
