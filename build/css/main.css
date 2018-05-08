@@ -1870,6 +1870,10 @@ body {
 a {
   color: #fff; }
 
+p {
+  margin: 0;
+  padding: 0; }
+
 .mainNavigation {
   position: fixed;
   top: 0;
@@ -2131,6 +2135,82 @@ a {
             animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear; }
+
+.section {
+  padding-top: 104px;
+  margin-bottom: 106px; }
+  .section__title {
+    margin: 0 0 20px;
+    font-family: "RalewayExtraBold", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px; }
+
+.sectionWrapper {
+  padding: 25px;
+  background: rgba(30, 30, 31, 0.85); }
+
+.aboutItem {
+  margin-bottom: 25px;
+  font-family: "RalewayMedium", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px; }
+  .aboutItem p {
+    margin: 0 0 20px; }
+    .aboutItem p:last-child {
+      margin-bottom: 0; }
+  .aboutItem:last-child {
+    margin-bottom: 0; }
+  .aboutItem__photo {
+    width: 100%;
+    height: auto; }
+  .aboutItem__text {
+    margin-bottom: 20px; }
+    .aboutItem__text--blue {
+      font-size: 20px;
+      color: #85a5c4; }
+
+.technologies__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.technologies__item {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: center; }
+  .technologies__item:last-child {
+    margin-right: 0; }
+  .technologies__item .icon-technologies {
+    width: 40px;
+    height: 40px;
+    fill: #aaaaaa;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+    .technologies__item .icon-technologies:hover {
+      -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+              transform: scale(1.2); }
+  .technologies__item .icon-html5:hover {
+    fill: #F16528; }
+  .technologies__item .icon-css3:hover {
+    fill: #119DD8; }
+  .technologies__item .icon-js:hover {
+    fill: #F0DB4F; }
+  .technologies__item .icon-bootstrap:hover {
+    fill: #563D7C; }
+  .technologies__item .icon-sass:hover {
+    fill: #CD669A; }
+  .technologies__item .icon-gulp:hover {
+    fill: #D04646; }
+  .technologies__item .icon-ps:hover {
+    fill: #00C8FF; }
+  .technologies__item .icon-wordpress:hover {
+    fill: #21759B; }
   @media (min-width: 576px) {
     .container {
       max-width: 540px; }
