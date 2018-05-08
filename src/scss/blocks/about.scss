@@ -32,3 +32,37 @@
   }
 
 }
+
+@media (min-width: map_get($grid-breakpoints, sm)) {
+  //576
+
+  .about__me {
+    padding: 50px 50px 25px;
+  }
+
+  .about-services {
+    padding: 25px 50px 50px;
+  }
+
+  .about__header {
+    margin-bottom: 30px;
+    font-size: 26px;
+  }
+
+  .about-me__img {
+    margin-bottom: 30px;
+  }
+
+  .about-me__info {
+    font-size: 16px;
+  }
+
+}
+@media (min-width: map_get($grid-breakpoints, lg)) {
+
+  .about-me__img,
+  .about-me__info {
+    margin-bottom: 0;
+  }
+
+}

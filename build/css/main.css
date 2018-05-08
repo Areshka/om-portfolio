@@ -2826,7 +2826,18 @@ p {
     line-height: 50px; }
   .mainHeader__text {
     font-size: 35px;
-    line-height: 40px; } }
+    line-height: 40px; }
+  .about__me {
+    padding: 50px 50px 25px; }
+  .about-services {
+    padding: 25px 50px 50px; }
+  .about__header {
+    margin-bottom: 30px;
+    font-size: 26px; }
+  .about-me__img {
+    margin-bottom: 30px; }
+  .about-me__info {
+    font-size: 16px; } }
   @media (min-width: 768px) {
     .container {
       max-width: 720px; }
@@ -4044,7 +4055,10 @@ p {
           margin-right: 0; }
   .mainHeader__header {
     font-size: 55px;
-    line-height: 60px; } }
+    line-height: 60px; }
+  .about-me__img,
+  .about-me__info {
+    margin-bottom: 0; } }
   @media (min-width: 1200px) {
     .container {
       max-width: 1140px; }
