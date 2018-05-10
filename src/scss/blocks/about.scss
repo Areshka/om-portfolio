@@ -45,16 +45,13 @@
 
   .aboutItem {
     margin-bottom: 0;
-    margin-right: 30px;
 
     &:first-child {
       flex-basis: 38%;
       max-width: 38%;
+      margin-left: 30px;
     }
 
-    &:last-child {
-      margin-right: 0;
-    }
   }
 
 }
