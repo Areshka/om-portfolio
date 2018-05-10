@@ -15,3 +15,17 @@
   padding: 25px;
   background: rgba(30,30,31,0.85);
 }
+
+@include media-breakpoint-up(md) {
+
+  .sectionWrapper {
+    padding: 50px;
+    padding-top: 45px;
+  }
+
+  .section__title {
+    margin-bottom: 26px;
+    font-size: 26px;
+  }
+
+}
