@@ -1845,6 +1845,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 500; }
 
 body {
+  position: relative;
   margin: 0;
   font-family: "RalewayRegular", sans-serif;
   font-size: 14px;
