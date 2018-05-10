@@ -2,7 +2,7 @@
   margin-bottom: 25px;
   font-family: "RalewayMedium", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
 
   p {
@@ -33,36 +33,28 @@
 
 }
 
-@media (min-width: map_get($grid-breakpoints, sm)) {
-  //576
+@include media-breakpoint-up(sm) {
 
-  .about__me {
-    padding: 50px 50px 25px;
-  }
-
-  .about-services {
-    padding: 25px 50px 50px;
-  }
-
-  .about__header {
-    margin-bottom: 30px;
-    font-size: 26px;
-  }
-
-  .about-me__img {
-    margin-bottom: 30px;
-  }
-
-  .about-me__info {
+  .aboutItem {
     font-size: 16px;
   }
 
 }
-@media (min-width: map_get($grid-breakpoints, lg)) {
 
-  .about-me__img,
-  .about-me__info {
+@include media-breakpoint-up(lg) {
+
+  .aboutItem {
     margin-bottom: 0;
+    margin-right: 30px;
+
+    &:first-child {
+      flex-basis: 38%;
+      max-width: 38%;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
 }
