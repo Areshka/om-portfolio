@@ -18,7 +18,7 @@ var path = {
   },
   watch: {
     html:   'src/**/*.html',
-    SCSS:   'src/scss/**/*.scss',
+    scss:   'src/scss/**/*.scss',
     js:     'src/js/**/*.js'
   },
   clean:    './build'
