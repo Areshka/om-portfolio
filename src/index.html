@@ -118,7 +118,7 @@
                 <h4 class="servicesItem__header">Адаптивная верстка</h4>
                 <p class="servicesItem__descr">Адаптивная верстка под планшеты и мобыльные устройва</p>
               </div>
-            </div>
+            </div> <!-- .servicesItem -->
             <div class="col-12  col-md-6  col-lg-4  servicesItem">
               <span class="servicesItem__icon">
                 <svg class="icon  icon-mobile"><use xlink:href="#icon-spinner"></use></svg>
@@ -127,7 +127,7 @@
                 <h4 class="servicesItem__header">Оптимизация скорости загрузки вашего сайта</h4>
                 <p class="servicesItem__descr">Скорость загрузки страницы на сайте очень важна, и поэтому ее нужно оптимизировать</p>
               </div>
-            </div>
+            </div> <!-- .servicesItem -->
             <div class="col-12  col-md-6  col-lg-4  servicesItem">
               <span class="servicesItem__icon">
                 <svg class="icon  icon-mobile"><use xlink:href="#icon-gear"></use></svg>
@@ -136,7 +136,7 @@
                 <h4 class="servicesItem__header">HTML5, CC3, JS</h4>
                 <p class="servicesItem__descr">Использование современных технологий верстки</p>
               </div>
-            </div>
+            </div> <!-- .servicesItem -->
             <div class="col-12  col-md-6  col-lg-4  servicesItem">
               <span class="servicesItem__icon">
                 <svg class="icon  icon-mobile"><use xlink:href="#icon-code"></use></svg>
@@ -145,7 +145,7 @@
                 <h4 class="servicesItem__header">Чистота и семантичность</h4>
                 <p class="servicesItem__descr">Аккуратный, логичный, продуманный код</p>
               </div>
-            </div>
+            </div> <!-- .servicesItem -->
             <div class="col-12  col-md-6  col-lg-4  servicesItem">
               <span class="servicesItem__icon">
                 <svg class="icon  icon-mobile"><use xlink:href="#icon-quality"></use></svg>
@@ -154,11 +154,51 @@
                 <h4 class="servicesItem__header">Качество</h4>
                 <p class="servicesItem__descr">Код будет выполнен качественно и точно в срок!</p>
               </div>
-            </div>
+            </div> <!-- .servicesItem -->
           </div> <!-- .row -->
         </div> <!-- .servises -->
       </div> <!-- .sectionWrapper -->
     </section> <!-- .section, .about -->
+
+    <section class="section  portfolio" id="portfolio">
+      <div class="sectionWrapper">
+        <div class="row">
+          <div class="col-12  col-lg-4">
+            <h2 class="section__title">Портфолио</h2>
+          </div>
+          <div class="col-12  col-lg-8">
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">All</a>
+              </li> <!-- .nav-item -->
+              <li class="nav-item">
+                <a class="nav-link" id="pills-html-tab" data-toggle="pill" href="#pills-html" role="tab" aria-controls="pills-html" aria-selected="false">HTML</a>
+              </li> <!-- .nav-item -->
+              <li class="nav-item">
+                <a class="nav-link" id="pills-bootstrap-tab" data-toggle="pill" href="#pills-bootstrap" role="tab" aria-controls="pills-bootstrap" aria-selected="false">Bootstrap</a>
+              </li> <!-- .nav-item -->
+            </ul> <!-- .nav-pills -->
+          </div> <!-- .coll -->
+        </div> <!--row-->
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+            <div class="row  no-gutters">
+              <div class="col-12  col-md-6  col-lg-4  portfolio__item">
+                <div class="card">
+                  <img class="card-img-top" src="img/mishka.jpg" alt="mishka">
+                  <div class="card-block">
+                    <h3 class="card-title">Mishka</h3>
+                    <p class="card-text">Адаптивный сайт Mishka - вязаные изделия ручной работы на заказ.</p>
+                    <p class="card-text card-text--last technologies"><span class="portfolio__item-technologies">Технологии:</span> HTML5, CCS3, Flexbox, SVG, JavaScript, Less, Gulp, Mobile First</p>
+                  </div> <!-- .card-block -->
+                  <a class="mybtn" href="https://areshka.github.io/mishka/build/" target="_blank">Посмотреть сайт</a>
+                </div> <!-- .card -->
+              </div> <!-- .portfolio__item -->
+            </div> <!-- .row -->
+          </div>  <!-- .tab-pane -->
+        </div> <!-- .tab-content -->
+      </div> <!-- sectionWrapper -->
+    </section> <!-- .section, .portfolio -->
   </div><!-- .container -->
 
   <script src="js/main.js">
