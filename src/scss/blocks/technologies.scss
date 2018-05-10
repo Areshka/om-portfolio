@@ -60,3 +60,40 @@
   }
 
 }
+
+@include media-breakpoint-up(lg) {
+
+  .technologies {
+
+    &__item {
+      margin-bottom: 0;
+      margin-right: 8px;
+      font-size: 12px;
+
+      .icon-technologies {
+        width: 38px;
+        height: 38px;
+      }
+    }
+
+  }
+
+}
+
+@include media-breakpoint-up(xl) {
+
+  .technologies {
+
+    &__item {
+      margin-right: 10px;
+      font-size: 14px;
+
+      .icon-technologies {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+  }
+
+}
