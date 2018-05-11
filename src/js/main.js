@@ -8,6 +8,7 @@
 //= ../bower_components/bootstrap4/js/dist/util.js
 //= ../bower_components/bootstrap4/js/dist/collapse.js
 //= ../bower_components/bootstrap4/js/dist/scrollspy.js
+//= ../bower_components/bootstrap4/js/dist/tab.js
 
 /* ------------------------------------------------------------------
   main-nav open-close
