@@ -162,38 +162,139 @@
 
     <section class="section  portfolio" id="portfolio">
       <div class="sectionWrapper">
-        <div class="row">
-          <div class="col-12  col-lg-4">
+        <div class="row no-gutters">
+          <div class="col-12  col-md-4">
             <h2 class="section__title">Портфолио</h2>
           </div>
-          <div class="col-12  col-lg-8">
+          <div class="col-12  col-md-8">
             <ul class="nav nav-pills" id="pills-tab" role="tablist">
               <li class="nav-item">
-                <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">All</a>
+                <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#all" role="tab" aria-controls="all" aria-selected="true">All</a>
               </li> <!-- .nav-item -->
               <li class="nav-item">
-                <a class="nav-link" id="pills-html-tab" data-toggle="pill" href="#pills-html" role="tab" aria-controls="pills-html" aria-selected="false">HTML</a>
+                <a class="nav-link" id="pills-html-tab" data-toggle="pill" href="#html" role="tab" aria-controls="html" aria-selected="false">HTML</a>
               </li> <!-- .nav-item -->
               <li class="nav-item">
-                <a class="nav-link" id="pills-bootstrap-tab" data-toggle="pill" href="#pills-bootstrap" role="tab" aria-controls="pills-bootstrap" aria-selected="false">Bootstrap</a>
+                <a class="nav-link" id="pills-bootstrap-tab" data-toggle="pill" href="#bootstrap" role="tab" aria-controls="bootstrap" aria-selected="false">Bootstrap</a>
               </li> <!-- .nav-item -->
             </ul> <!-- .nav-pills -->
           </div> <!-- .coll -->
         </div> <!--row-->
         <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
-            <div class="row  no-gutters">
-              <div class="col-12  col-md-6  col-lg-4  portfolio__item">
+          <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="pills-all-tab">
+            <div class="row">
+              <div class="col-12  col-md-6  col-lg-4  portfolioItem">
                 <div class="card">
-                  <img class="card-img-top" src="img/mishka.jpg" alt="mishka">
+                  <img class="card-img-top" src="./img/mishka.jpg" alt="mishka">
                   <div class="card-block">
                     <h3 class="card-title">Mishka</h3>
                     <p class="card-text">Адаптивный сайт Mishka - вязаные изделия ручной работы на заказ.</p>
-                    <p class="card-text card-text--last technologies"><span class="portfolio__item-technologies">Технологии:</span> HTML5, CCS3, Flexbox, SVG, JavaScript, Less, Gulp, Mobile First</p>
+                    <p class="card-text  portfolioItem__technologies"><span class="portfolioItem__technologies--blue">Технологии:</span> HTML5, CCS3, Flexbox, SVG, JavaScript, Less, Gulp, Mobile First</p>
                   </div> <!-- .card-block -->
-                  <a class="mybtn" href="https://areshka.github.io/mishka/build/" target="_blank">Посмотреть сайт</a>
                 </div> <!-- .card -->
-              </div> <!-- .portfolio__item -->
+                <div class="buttonWrapper">
+                  <a class="button" href="https://areshka.github.io/mishka/build/" target="_blank">Посмотреть сайт</a>
+                </div>
+              </div> <!-- .portfolioItem -->
+              <div class="col-12  col-md-6  col-lg-4  portfolioItem">
+                <div class="card">
+                  <img class="card-img-top" src="./img/pink.jpg" alt="pink">
+                  <div class="card-block">
+                    <h3 class="card-title">Pink</h3>
+                    <p class="card-text">Адаптивный сайт Pink - сайт мобильного приложения.</p>
+                    <p class="card-text  portfolioItem__technologies"><span class="portfolioItem__technologies--blue">Технологии:</span> HTML5, CCS3, Flexbox, SVG, JavaScript, Less, Gulp, Mobile First</p>
+                  </div> <!-- .card-block -->
+                </div> <!-- .card -->
+                <div class="buttonWrapper">
+                  <a class="button" href="https://areshka.github.io/pink/build/" target="_blank">Посмотреть сайт</a>
+                </div>
+              </div> <!-- .portfolioItem -->
+              <div class="col-12  col-md-6  col-lg-4  portfolioItem">
+                <div class="card">
+                  <img class="card-img-top" src="./img/barbershop.png" alt="barbershop">
+                  <div class="card-block">
+                    <h3 class="card-title">Barbershop</h3>
+                    <p class="card-text">Фиксированный сайт Barbershop.</p>
+                    <p class="card-text  portfolioItem__technologies"><span class="portfolioItem__technologies--blue">Технологии:</span> HTML5, CCS3, JavaScript</p>
+                  </div> <!-- .card-block -->
+                </div> <!-- .card -->
+                <div class="buttonWrapper">
+                  <a class="button" href="https://areshka.github.io/Waxom/build/" target="_blank">Посмотреть сайт</a>
+                </div>
+              </div> <!-- .portfolioItem -->
+              <div class="col-12  col-md-6  col-lg-4  portfolioItem">
+                <div class="card">
+                  <img class="card-img-top" src="./img/waxom.png" alt="waxom">
+                  <div class="card-block">
+                    <h3 class="card-title">Waxom</h3>
+                    <p class="card-text">Адаптивный сайт Waxom - шаблон сайта портфолио.</p>
+                    <p class="card-text  portfolioItem__technologies"><span class="portfolioItem__technologies--blue">Технологии:</span> Bootstrap, Flexbox, SVG, JavaScript, Less, Gulp, Mobile First</p>
+                  </div> <!-- .card-block -->
+                </div> <!-- .card -->
+                <div class="buttonWrapper">
+                  <a class="button" href="https://areshka.github.io/Waxom/build/" target="_blank">Посмотреть сайт</a>
+                </div>
+              </div> <!-- .portfolioItem -->
+            </div> <!-- .row -->
+          </div>  <!-- .tab-pane -->
+          <div class="tab-pane fade show active" id="html" role="tabpanel" aria-labelledby="pills-html-tab">
+            <div class="row">
+              <div class="col-12  col-md-6  col-lg-4  portfolioItem">
+                <div class="card">
+                  <img class="card-img-top" src="./img/barbershop.png" alt="barbershop">
+                  <div class="card-block">
+                    <h3 class="card-title">Barbershop</h3>
+                    <p class="card-text">Фиксированный сайт Barbershop.</p>
+                    <p class="card-text  portfolioItem__technologies"><span class="portfolioItem__technologies--blue">Технологии:</span> HTML5, CCS3, JavaScript</p>
+                  </div> <!-- .card-block -->
+                </div> <!-- .card -->
+                <div class="buttonWrapper">
+                  <a class="button" href="https://areshka.github.io/Waxom/build/" target="_blank">Посмотреть сайт</a>
+                </div>
+              </div> <!-- .portfolioItem -->
+              <div class="col-12  col-md-6  col-lg-4  portfolioItem">
+                <div class="card">
+                  <img class="card-img-top" src="./img/pink.jpg" alt="pink">
+                  <div class="card-block">
+                    <h3 class="card-title">Pink</h3>
+                    <p class="card-text">Адаптивный сайт Pink - сайт мобильного приложения.</p>
+                    <p class="card-text  portfolioItem__technologies"><span class="portfolioItem__technologies--blue">Технологии:</span> HTML5, CCS3, Flexbox, SVG, JavaScript, Less, Gulp, Mobile First</p>
+                  </div> <!-- .card-block -->
+                </div> <!-- .card -->
+                <div class="buttonWrapper">
+                  <a class="button" href="https://areshka.github.io/pink/build/" target="_blank">Посмотреть сайт</a>
+                </div>
+              </div> <!-- .portfolioItem -->
+              <div class="col-12  col-md-6  col-lg-4  portfolioItem">
+                <div class="card">
+                  <img class="card-img-top" src="./img/mishka.jpg" alt="mishka">
+                  <div class="card-block">
+                    <h3 class="card-title">Mishka</h3>
+                    <p class="card-text">Адаптивный сайт Mishka - вязаные изделия ручной работы на заказ.</p>
+                    <p class="card-text  portfolioItem__technologies"><span class="portfolioItem__technologies--blue">Технологии:</span> HTML5, CCS3, Flexbox, SVG, JavaScript, Less, Gulp, Mobile First</p>
+                  </div> <!-- .card-block -->
+                </div> <!-- .card -->
+                <div class="buttonWrapper">
+                  <a class="button" href="https://areshka.github.io/mishka/build/" target="_blank">Посмотреть сайт</a>
+                </div>
+              </div> <!-- .portfolioItem -->
+            </div> <!-- .row -->
+          </div>  <!-- .tab-pane -->
+          <div class="tab-pane fade show active" id="bootstrap" role="tabpanel" aria-labelledby="pills-bootstrap-tab">
+            <div class="row">
+              <div class="col-12  col-md-6  col-lg-4  portfolioItem">
+                <div class="card">
+                  <img class="card-img-top" src="./img/waxom.png" alt="waxom">
+                  <div class="card-block">
+                    <h3 class="card-title">Waxom</h3>
+                    <p class="card-text">Адаптивный сайт Waxom - шаблон сайта портфолио.</p>
+                    <p class="card-text  portfolioItem__technologies"><span class="portfolioItem__technologies--blue">Технологии:</span> Bootstrap, Flexbox, SVG, JavaScript, Less, Gulp, Mobile First</p>
+                  </div> <!-- .card-block -->
+                </div> <!-- .card -->
+                <div class="buttonWrapper">
+                  <a class="button" href="https://areshka.github.io/Waxom/build/" target="_blank">Посмотреть сайт</a>
+                </div>
+              </div> <!-- .portfolioItem -->
             </div> <!-- .row -->
           </div>  <!-- .tab-pane -->
         </div> <!-- .tab-content -->
