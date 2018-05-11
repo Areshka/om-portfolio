@@ -1,0 +1,43 @@
+.buttonWrapper {
+  text-align: center;  
+}
+
+.button {
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+  padding: 10px 15px;
+  font-family: "RalewayBold", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $gray;
+  background: transparent;
+  border: 2px solid $gray;
+  transition: all .4s ease;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    background: $blue;
+    transition: 0.3s;
+  }
+
+  &:hover::after{
+    width: 100%;
+  }
+
+  &:hover {
+    color: #000;
+    border-color: $blue;
+    text-decoration: none;
+  }
+
+}
