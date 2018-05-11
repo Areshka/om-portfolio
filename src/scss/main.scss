@@ -5,6 +5,7 @@
 @import "../bower_components/bootstrap4/scss/_transitions.scss";
 @import "../bower_components/bootstrap4/scss/_navbar.scss";
 @import "../bower_components/bootstrap4/scss/_nav.scss";
+@import "../bower_components/bootstrap4/scss/_card.scss";
 
 // Components
 @import "./variables.scss";
@@ -13,9 +14,11 @@
 @import "components/scaffolding.scss";
 
 // Blocks
+@import "blocks/buttons.scss";
 @import "blocks/mainNavigation.scss";
 @import "blocks/mainHeader.scss";
 @import "blocks/section.scss";
 @import "blocks/about.scss";
 @import "blocks/technologies.scss";
 @import "blocks/services.scss";
+@import "blocks/portfolio.scss";
