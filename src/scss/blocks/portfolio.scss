@@ -1,0 +1,127 @@
+.portfolio {
+
+  .nav-link {
+    padding: $nav-link-padding-y $nav-link-padding-x;
+    font-family: "RalewayBold", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .nav-pills {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+
+    .nav-item {
+      margin-right: 5px;
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    .nav-link {
+      color: $nav-pills-link-color;
+      border: 2px solid $nav-pills-link-border-color;
+      border-radius: 0;
+      transition: all 0.4s ease;
+
+      &:hover {
+        color: $nav-pills-link-hover-color;
+        border-color: $nav-pills-link-hover-border-color;
+      }
+    }
+
+    .nav-link.active,
+    .show > .nav-link {
+      color: $nav-pills-link-active-color;
+      background-color: $nav-pills-link-active-bg;
+      border-color: $nav-pills-link-active-border-color;
+    }
+  }
+
+  .tab-content {
+    > .tab-pane {
+      display: none;
+    }
+
+    > .active {
+      display: block;
+    }
+  }
+
+}
+
+@include media-breakpoint-up(md) {
+
+  .portfolio {
+    .nav-pills {
+      justify-content: flex-end;
+
+      .nav-item {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
+
+
+.portfolioItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  font-size: 12px;
+
+  &:last-child {
+    // margin-bottom: 0;
+  }
+
+  .card {
+    flex-grow: 1;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .card-block {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .card-title {
+    margin-bottom: 10px;
+    font-family: "RalewaySemiBold", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: $lightBlue;
+  }
+
+  .card-text {
+    margin-bottom: 10px;
+    font-family: "RalewayRegular", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__technologies {
+    &--blue {
+    font-weight: 700;
+    font-size: 18px;
+    color: $lightBlue;
+    }
+  }
+
+}
