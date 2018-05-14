@@ -1,0 +1,48 @@
+.form-control {
+  padding: $input-btn-padding-y $input-btn-padding-x;
+  font-family: "RalewayRegular", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: $input-color;
+  background-color: $input-bg;
+  border: $input-btn-border-width solid $input-border-color;
+  outline: 0;
+  border-radius: 0;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $input-hover-color;
+    background-color: transparent;
+    border-color: $input-hover-border-color;
+    outline: 0;
+    box-shadow: none;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+  // Placeholder
+  &::placeholder {
+    color: $input-placeholder-color;
+  }
+}
+
+.form-groupe--full {
+  height: calc(100% - 25px);
+
+}
+.form-groupe--full textarea {
+  height: calc(100% - 25px);   
+}
+
+label {
+  font-family: "RalewayBold", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #E0E0E0;
+}
+
+.form-group {
+  margin-bottom: $form-group-margin-bottom;
+}
