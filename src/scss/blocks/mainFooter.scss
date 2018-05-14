@@ -5,11 +5,13 @@
   p {
     margin-bottom: 10px;
     line-height: 18px;
+    text-align: center;
   }
 }
 
 .social {
   display: flex;
+  justify-content: center;
   text-align: right;
 }
 
@@ -75,6 +77,7 @@
 
     p {
       margin-bottom: 0;
+      text-align: left;
       line-height: 30px;
     }
   }
