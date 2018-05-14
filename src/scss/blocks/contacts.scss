@@ -1,0 +1,59 @@
+.contacts {
+  &List {
+    margin-bottom: 25px;
+  }
+
+  &__item {
+    display: flex;
+    margin-bottom: 15px;
+    font-family: "RalewayRegular", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-icon {
+      fill: $blue;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+
+    }
+
+    &-info {
+      margin: 0;
+      line-height: 30px;
+    }
+  }
+
+}
+
+@include media-breakpoint-up(sm) {
+
+  .boxButton {
+    &--send {
+      text-align: left;
+    }
+
+    &--clear {
+      text-align: right;
+    }
+  }
+
+}
+
+@include media-breakpoint-up(lg) {
+
+  .boxButton {
+    &--send {
+      text-align: right;
+    }
+
+    &--clear {
+      text-align: left;
+    }
+  }
+
+}
