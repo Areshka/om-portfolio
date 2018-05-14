@@ -1,6 +1,7 @@
 $font-folder: "../fonts/"; // путь к шрифтам
 $img-folder: "../img/"; // путь к картинкам
 
+$white: #ffffff;
 $text-color: #dddddd; // цвет шрифта
 $gray: #aaaaaa;
 $darkGray: #4f4f4f;
@@ -48,3 +49,14 @@ $input-placeholder-color: $gray;
 $input-hover-color: #E0E0E0;
 $input-hover-border-color: #E0E0E0;
 $form-group-margin-bottom: 25px;
+
+//social
+$social-link-border-color-fb: #677FB5;
+$social-icon-fill-fb: #677FB5;
+$social-link-hover-bg-fb: #677FB5;
+$social-link-border-color-insta: #B99682;
+$social-icon-fill-insta: #B99682;
+$social-link-hover-bg-insta: #B99682;
+$social-link-border-color-tw: #70C2E9;
+$social-icon-fill-tw: #70C2E9;
+$social-link-hover-bg-tw: #70C2E9;
