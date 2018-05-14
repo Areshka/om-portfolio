@@ -2993,13 +2993,8 @@ p {
   .form-control::placeholder {
     color: #aaaaaa; }
 
-.form-groupe--full {
-  height: -webkit-calc(100% - 25px);
-  height: calc(100% - 25px); }
-
 .form-groupe--full textarea {
-  height: -webkit-calc(100% - 25px);
-  height: calc(100% - 25px); }
+  height: 150px; }
 
 label {
   font-family: "RalewayBold", sans-serif;
@@ -5125,7 +5120,13 @@ label {
   .boxButton--send {
     text-align: right; }
   .boxButton--clear {
-    text-align: left; } }
+    text-align: left; }
+  .form-groupe--full {
+    height: -webkit-calc(100% - 25px);
+    height: calc(100% - 25px); }
+  .form-groupe--full textarea {
+    height: -webkit-calc(100% - 25px);
+    height: calc(100% - 25px); } }
     @media (min-width: 1200px) {
   .d-xl-none {
     display: none !important; }
