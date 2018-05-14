@@ -1,11 +1,12 @@
 // Bootstrap
 @import "../bower_components/bootstrap4/scss/bootstrap-reboot.scss";
-@import "../bower_components/bootstrap4/scss/_grid.scss";
 @import "../bower_components/bootstrap4/scss/_utilities.scss";
+@import "../bower_components/bootstrap4/scss/_grid.scss";
 @import "../bower_components/bootstrap4/scss/_transitions.scss";
 @import "../bower_components/bootstrap4/scss/_navbar.scss";
 @import "../bower_components/bootstrap4/scss/_nav.scss";
 @import "../bower_components/bootstrap4/scss/_card.scss";
+@import "../bower_components/bootstrap4/scss/_forms.scss";
 
 // Components
 @import "./variables.scss";
@@ -22,3 +23,5 @@
 @import "blocks/technologies.scss";
 @import "blocks/services.scss";
 @import "blocks/portfolio.scss";
+@import "blocks/contacts.scss";
+@import "blocks/forms.scss";
