@@ -3014,17 +3014,14 @@ label {
   margin-top: -170px;
   margin-bottom: 30px; }
   .mainFooter p {
-    line-height: 30px; }
+    margin-bottom: 10px;
+    line-height: 18px; }
 
 .social {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   text-align: right; }
 
 .socialLink {
@@ -4483,7 +4480,19 @@ label {
         -ms-flex-pack: end;
             justify-content: flex-end; }
     .portfolio .nav-pills .nav-item {
-      margin-bottom: 0; } }
+      margin-bottom: 0; }
+  .mainFooter p {
+    margin-bottom: 0;
+    line-height: 30px; }
+  .social {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; } }
     @media (min-width: 992px) {
   .d-lg-none {
     display: none !important; }
