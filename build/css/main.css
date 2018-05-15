@@ -2379,7 +2379,11 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
-  background: url("../img/cover.jpg") no-repeat;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(28, 29, 33, 0.8)), color-stop(50%, rgba(102, 102, 102, 0.5)), to(rgba(28, 29, 33, 0.8))), url("../img/cover.jpg") no-repeat;
+  background: -webkit-linear-gradient(left, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%), url("../img/cover.jpg") no-repeat;
+  background: -o-linear-gradient(left, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%), url("../img/cover.jpg") no-repeat;
+  background: linear-gradient(to right, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%), url("../img/cover.jpg") no-repeat;
+  background-attachment: fixed;
   -webkit-background-size: cover;
           background-size: cover; }
 
