@@ -2378,15 +2378,29 @@ body {
   font-family: "RalewayRegular", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  color: #ffffff;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(28, 29, 33, 0.8)), color-stop(50%, rgba(102, 102, 102, 0.5)), to(rgba(28, 29, 33, 0.8))), url("../img/cover.jpg") no-repeat;
-  background: -webkit-linear-gradient(left, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%), url("../img/cover.jpg") no-repeat;
-  background: -o-linear-gradient(left, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%), url("../img/cover.jpg") no-repeat;
-  background: linear-gradient(to right, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%), url("../img/cover.jpg") no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-          background-size: cover; }
+  color: #ffffff; }
+  body .bg-fixed {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    margin: 0;
+    color: #fff;
+    background: url("../img/cover.jpg") no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover; }
+    body .bg-fixed::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      z-index: -5;
+      width: 100vw;
+      max-width: 100%;
+      height: 100%;
+      background: -webkit-gradient(linear, left top, right top, from(rgba(28, 29, 33, 0.8)), color-stop(50%, rgba(102, 102, 102, 0.5)), to(rgba(28, 29, 33, 0.8)));
+      background: -webkit-linear-gradient(left, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%);
+      background: -o-linear-gradient(left, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%);
+      background: linear-gradient(to right, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%); }
 
 a {
   color: #fff; }
