@@ -6,8 +6,9 @@ body {
   line-height: 18px;
   color: #ffffff;
   background: linear-gradient(to right, rgba(#1C1D21, .8) 0%, rgba(#666, .5) 50%, rgba(#1C1D21, .8) 100%), url('../img/cover.jpg') no-repeat;
+  background-position: center center;
   background-attachment: fixed;
-  background-size: 100% 150%;
+  background-size: cover;
 }
 
 a {
