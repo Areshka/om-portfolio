@@ -2383,7 +2383,6 @@ body {
   background: -webkit-linear-gradient(left, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%), url("../img/cover.jpg") no-repeat;
   background: -o-linear-gradient(left, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%), url("../img/cover.jpg") no-repeat;
   background: linear-gradient(to right, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%), url("../img/cover.jpg") no-repeat;
-  background-attachment: fixed;
   -webkit-background-size: cover;
           background-size: cover; }
 
