@@ -2386,10 +2386,10 @@ body {
   z-index: -1;
   margin: 0;
   color: #fff;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(28, 29, 33, 0.8)), color-stop(50%, rgba(102, 102, 102, 0.5)), to(rgba(28, 29, 33, 0.8))), url("../img/cover.jpg") no-repeat;
-  background: -webkit-linear-gradient(left, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%), url("../img/cover.jpg") no-repeat;
-  background: -o-linear-gradient(left, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%), url("../img/cover.jpg") no-repeat;
-  background: linear-gradient(to right, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%), url("../img/cover.jpg") no-repeat;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(28, 29, 33, 0.8)), color-stop(50%, rgba(102, 102, 102, 0.5)), to(rgba(28, 29, 33, 0.8))), url("../img/cover-mobile.jpg") no-repeat;
+  background: -webkit-linear-gradient(left, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%), url("../img/cover-mobile.jpg") no-repeat;
+  background: -o-linear-gradient(left, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%), url("../img/cover-mobile.jpg") no-repeat;
+  background: linear-gradient(to right, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%), url("../img/cover-mobile.jpg") no-repeat;
   -webkit-background-size: cover;
           background-size: cover; }
 
@@ -3833,6 +3833,13 @@ label {
               justify-content: center; }
     .form-inline .custom-control-label {
       margin-bottom: 0; }
+  .bg-fixed {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(28, 29, 33, 0.8)), color-stop(50%, rgba(102, 102, 102, 0.5)), to(rgba(28, 29, 33, 0.8))), url("../img/cover-tablet.jpg") no-repeat;
+    background: -webkit-linear-gradient(left, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%), url("../img/cover-tablet.jpg") no-repeat;
+    background: -o-linear-gradient(left, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%), url("../img/cover-tablet.jpg") no-repeat;
+    background: linear-gradient(to right, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%), url("../img/cover-tablet.jpg") no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover; }
   .logo img {
     width: 40px;
     height: 40px; }
@@ -4451,6 +4458,13 @@ label {
               flex-basis: auto; }
     .navbar-expand-md .navbar-toggler {
       display: none; }
+  .bg-fixed {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(28, 29, 33, 0.8)), color-stop(50%, rgba(102, 102, 102, 0.5)), to(rgba(28, 29, 33, 0.8))), url("../img/cover.jpg") no-repeat;
+    background: -webkit-linear-gradient(left, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%), url("../img/cover.jpg") no-repeat;
+    background: -o-linear-gradient(left, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%), url("../img/cover.jpg") no-repeat;
+    background: linear-gradient(to right, rgba(28, 29, 33, 0.8) 0%, rgba(102, 102, 102, 0.5) 50%, rgba(28, 29, 33, 0.8) 100%), url("../img/cover.jpg") no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover; }
   .mainHeader__header {
     font-size: 50px;
     line-height: 55px; }
