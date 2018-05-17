@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
  * Bootstrap Reboot v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -2641,15 +2640,7 @@ p {
     font-weight: 400;
     font-style: italic;
     font-size: 20px;
-    line-height: 40px;
-    margin: 0 auto;
-    /* Эффект скроллинга во время печати */
-    white-space: nowrap;
-    /* Печать одной прямой строки */
-    overflow: hidden;
-    /* Скрывает содержимое до анимации */
-    -webkit-animation: typing 3.5s steps(40, end);
-            animation: typing 3.5s steps(40, end); }
+    line-height: 40px; }
 
 /* The typing effect */
 @-webkit-keyframes typing {
