@@ -41,7 +41,7 @@ p {
 
 }
 
-@include media-breakpoint-up(md) {
+@include media-breakpoint-up(lg) {
 
   .bg-fixed {
     background: linear-gradient(to right, rgba(#1C1D21, .8) 0%, rgba(#666, .5) 50%, rgba(#1C1D21, .8) 100%), url($img-folder + ("cover.jpg")) no-repeat;
