@@ -28,10 +28,10 @@
     font-style: italic;
     font-size: 20px;
     line-height: 40px;
-    margin: 0 auto; /* Эффект скроллинга во время печати */
-    white-space: nowrap; /* Печать одной прямой строки */
-    overflow: hidden; /* Скрывает содержимое до анимации */
-    animation: typing 3.5s steps(40, end);
+    // margin: 0 auto; /* Эффект скроллинга во время печати */
+    // white-space: nowrap; /* Печать одной прямой строки */
+    // overflow: hidden; /* Скрывает содержимое до анимации */
+    // animation: typing 3.5s steps(40, end);
   }
 
 }
@@ -113,5 +113,5 @@
     font-size: 55px;
     line-height: 60px;
   }
-    
+
 }
